@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.title {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image {
+    margin: auto;
+    width: 40%;
+}
+
+.description {
+    width: 60%;
+}
+.description p {
+    width: 50%;
+}
+
+.description h4 {
+    color: red;
+    font-weight: 600;
+}
+.description a:hover {
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 100%;
+    }
+    .description {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

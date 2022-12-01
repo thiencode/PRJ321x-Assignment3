@@ -1,0 +1,121 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left {
+    /* display: inline-block; */
+    width: 15%;
+    background-color: rgb(42, 50, 70);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-left h3 {
+    color: coral;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.flex-left p {
+    color: aliceblue;
+    margin: 10px 0;
+
+}
+
+.flex-left p:hover {
+    background-color: rgb(120, 43, 153);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex-left :nth-child(2) {
+    background-color: rgb(120, 43, 153);
+    border-radius: 5px;
+}
+
+.flex-right {
+    width: 85%;
+    background-color: rgb(26, 32, 52);
+}
+
+.banner {
+    background-image: url("${pageContext.request.contextPath}/web/media/banner/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    padding: 10px 15px;
+}
+.nav-bar ul li a{
+    font-size: medium;
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.welcome {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.welcome h1 {
+    text-align: center;
+    color: aliceblue;
+}
+.table {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+table caption {
+    background-color: rgb(120, 43, 153);
+    text-align: left;
+    padding: 5px 20px;
+    color: #ddd;
+    width: 95%;
+    margin: 0 2.5%;
+    border-radius: 5px;
+    transform: translateY(50%);
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    background-color: rgb(32,41,63);
+    opacity: 0.8;
+    padding: 50px 15px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    color: #ddd;
+    margin-left: 30px;
+}
+
+table td {
+    border-top: 1px solid #ddd;
+  }
+
+  table th {
+    padding-top: 30px;
+  }
+  tr:hover {
+    background-color: rgb(120, 43, 153);
+    opacity: 0.8;
+}

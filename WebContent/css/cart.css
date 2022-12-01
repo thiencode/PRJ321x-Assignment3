@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.containers {
+	margin: 20px;
+}
+
+.tbl-product table, td, th {
+	border: 1px solid;
+}
+
+.tbl-product table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tbl-product table thead tr th {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.tbl-product table tr td {
+	padding-left: 5px;
+}
+
+.tbl-product table tfoot tr td {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.userForm {
+	margin-top: 20px;
+}
+
+.rowInput {
+	display: flex;
+	flex-direction: row;
+}
+
+.rowInput label {
+	display: flex;
+	flex: 0.5;
+}
+
+.rowInput input {
+	width: 50%;
+}
+
+.btn-warning {
+	color: gray;
+	font-weight: bold;
+}
+
+.stepper {
+	display: flex;
+	/* Border */
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	/* Size */
+	height: 32px;
+	width: 128px;
+	margin: 0 auto;
+}
+
+.stepper__button {
+	/* Center the content */
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	/* Size */
+	width: 32px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.stepper__button:hover{
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.stepper__content {
+	flex: 1;
+}
+
+.stepper__input {
+	/* Take full size of its container */
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.rowInput input {
+		width: 90%;
+		margin-left: 10px;
+	}
+}
